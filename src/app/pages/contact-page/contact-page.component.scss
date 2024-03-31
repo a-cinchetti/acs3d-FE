@@ -1,0 +1,29 @@
+@import 'src/assets/scss/palette.scss';
+
+.contact-info {
+  display: flex;
+  gap: 150px;
+  padding: 50px;
+  justify-content: center;
+  &__element {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    font-size: 24px;
+    line-height: 40px;
+    &--icon {
+      font-size: 40px;
+    }
+    &--title {
+      font-size: 30px;
+      font-weight: 700;
+      color: $giallo1;
+    }
+    &--value {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+}

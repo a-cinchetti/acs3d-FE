@@ -9,6 +9,10 @@ import {FooterComponent} from './layout/footer/footer.component';
 import {InlineSVGModule} from "ng-inline-svg-2";
 import {HttpClientModule} from "@angular/common/http";
 import {StringTranslateModule} from "./string-translate-module/string-translate.module";
+import {MatFormField, MatFormFieldModule} from "@angular/material/form-field";
+import {MatSelect, MatSelectModule} from "@angular/material/select";
+import {MatIconModule} from "@angular/material/icon";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -22,6 +26,10 @@ import {StringTranslateModule} from "./string-translate-module/string-translate.
     StringTranslateModule,
     InlineSVGModule.forRoot(),
     HttpClientModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatIconModule,
+    FormsModule
   ],
   providers: [
     provideAnimationsAsync(),

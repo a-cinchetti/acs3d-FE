@@ -5,6 +5,7 @@
   padding: 20px;
   flex-direction: row;
   align-items: center;
+
   &__menu {
     display: flex;
     flex-direction: row;
@@ -14,8 +15,19 @@
     align-items: center;
     gap: 40px;
     margin-right: 80px;
+
+    &__item {
+      cursor: pointer;
+
+      &:hover {
+        color: $giallo2;
+      }
+    }
   }
+
   &__logo {
+    cursor: pointer;
+
     &__icon-svg {
       ::ng-deep svg {
         width: 100px;
@@ -26,14 +38,80 @@
         }
       }
     }
+
     span {
       font-size: 16px;
     }
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   color: $giallo1;
+
+  .language-selector {
+    gap: 10px;
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      transform: scale(2);
+      display: flex;
+      align-items: center;
+    }
+
+    &__select {
+      width: 150px;
+      margin-top: 22px;
+
+      .mat-mdc-select {
+        color: $bianco;
+      }
+
+      ::ng-deep.mat-mdc-select-arrow {
+        color: $bianco;
+      }
+
+      ::ng-deep.mat-mdc-form-field.mat-focused .mat-mdc-select-arrow {
+        color: $bianco;
+      }
+
+      ::ng-deep.mdc-notched-outline {
+        .mat-form-field-outline-start,
+        .mdc-notched-outline__leading {
+          border-radius: 5px 0 0 5px;
+          border-color: $bianco;
+        }
+
+        .mat-form-field-outline-end,
+        .mdc-notched-outline__trailing {
+          border-radius: 0 4px 4px 0;
+          border-color: $bianco;
+        }
+
+        .mdc-notched-outline__leading,
+        .mdc-notched-outline__notch,
+        .mdc-notched-outline__trailing {
+          border-width: 1px;
+          border-color: $bianco;
+        }
+
+        ::ng-deep .mdc-notched-outline__leading {
+          border-color: $bianco !important;
+        }
+
+        ::ng-deep .mdc-notched-outline__notch {
+          border-color: $bianco !important;
+        }
+
+        ::ng-deep .mdc-notched-outline__trailing {
+          border-color: $bianco !important;
+        }
+      }
+    }
+  }
 }
 

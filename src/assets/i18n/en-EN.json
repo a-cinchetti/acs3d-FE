@@ -1,3 +1,56 @@
 {
-  "test": "prova di conversione"
+  "LANGUAGE": {
+    "it-IT": "Italian",
+    "en-EN": "English"
+  },
+  "HEADER": {
+    "MOTTO": "One layer at a time",
+    "3DPRINT": "3D Print",
+    "CONTACT": "Contacts",
+    "TECHNOLOGY": "Technologies"
+  },
+  "FOOTER": {
+    "LEGAL_NOTE": "Copyright © 2024 Sir.co snc - All rights reserved C.F./P.IVA 03919410161"},
+  "PRINT": {
+    "MOTTO": "Experience the future of 3D printing",
+    "MESSAGE": "Discover the unlimited possibilities of 3D printing with ACS 3D. Revolutionize your designs and bring them to life.",
+    "EXPLORE": "Explore Now",
+    "HISTORY": "Based in the province of Bergamo, just a stone's throw from both Brescia and Milan, ACS 3D is a cutting-edge service dedicated to turning ideas and designs into tangible reality through 3D printing technology.  We are committed to providing high-quality additive manufacturing solutions to meet our customers' needs. Whether you need prototypes, architectural models or custom designs, our dedicated team is committed to providing efficient and reliable solutions.",
+    "FUTURE": "Discover the future of 3D printing with ACS 3D and unlock endless possibilities for your business.",
+    "HISTORY_MOTTO": "ACS 3D - one layer at a time",
+    "FABIOC": "High quality 3D printing and impeccable service. Highly recommended!",
+    "MICHELS": "Precise and punctual.",
+    "SAY": "Say about us",
+    "ANGELOC": "Rapid prototyping and implementation of our own design.",
+    "CONTENT": {
+      "TITLE1": "Custom Prototypes",
+      "DESCRIPTION1": "We understand that every project is unique. That's why we offer solutions that are tailored to the client's needs.",
+      "TITLE2": "Creative collaborations",
+      "DESCRIPTION2": "We work closely with our clients, listening to their ideas and offering them all our expertise.\n      ",
+      "TITLE3": "On-time deliveries",
+      "DESCRIPTION3": "We understand the importance of lead times, ensuring accurate productions and shipments, on time."}
+  },
+  "CONTACT": {
+    "INPUT": {
+      "NAME": "Name",
+      "EMAIL": "Email",
+      "MESSAGE": "Message"
+    },
+    "TELEPHONE": "Phone",
+    "EMAIL": "Email",
+    "TITLE": "Contact us",
+    "MESSAGE": "Fill out our contact form for inquiries or quotation requests and we will get back to you as soon as possible.\"",
+    "SEND": "Send",
+    "PRIVACY": "I consent to the processing of my personal data in accordance with Article 13 of Legislative Decree No. 196/2003 and Article 13 of EU Regulation No. 2016/679 (mandatory)\"",
+    "ERROR": {
+      "NAME": "Enter your name",
+      "EMAIL": "Please enter a valid email address",
+      "MESSAGE": "Please enter a message"
+    }
+  },
+  "TECHNOLOGY": {
+    "MESSAGE1": "Fused Deposition Modeling (FDM) 3D printing is a technology that uses thermoplastic filament extruded from a nozzle to create one layer at a time, layering the material until it forms the desired three-dimensional object. The process begins with digital modeling of the object, which is then divided into layers. The filament is heated to liquid and deposited layer by layer on the platform, solidifying rapidly to form the final object.",
+    "MESSAGE2": "Resin 3D printing, also known as stereolithography (SLA) or liquid polymerization 3D printing (DLP), employs ultraviolet light to solidify a thin layer of photosensitive resin. During printing, a special laser (in the case of SLA) or a UV light source (in the case of DLP) hardens the liquid resin layer by layer, creating a solid object. This technology is prized for its ability to produce very fine details and smooth surfaces, making it suitable for precision prototyping and the production of objects with intricate details."
+  }
+
 }

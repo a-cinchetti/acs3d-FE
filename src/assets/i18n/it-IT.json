@@ -1,4 +1,8 @@
 {
+  "LANGUAGE": {
+    "it-IT": "Italiano",
+    "en-EN": "Inglese"
+  },
   "HEADER": {
     "MOTTO": "Uno strato alla volta",
     "3DPRINT": "Stampa 3D",
@@ -17,6 +21,7 @@
     "HISTORY_MOTTO": "ACS 3D - uno strato alla volta",
     "FABIOC": "Stampa 3D di alta qualità e servizio impeccabile. Consigliatissimi!",
     "MICHELS": "Precisi e puntuali.",
+    "SAY": "Dicono di noi",
     "ANGELOC": "Rapida prototipazione e realizzazione di un nostro progetto.",
     "CONTENT": {
       "TITLE1": "Prototipi personalizzati",
@@ -33,6 +38,8 @@
       "EMAIL": "Email",
       "MESSAGE": "Messaggio"
     },
+    "TELEPHONE": "Telefono",
+    "EMAIL": "Email",
     "TITLE": "Contattaci",
     "MESSAGE": "Compila il nostro form di contatto per richieste di informazioni o di preventivo e ti risponderemo al più presto.",
     "SEND": "Invia",
@@ -42,5 +49,10 @@
       "EMAIL": "Inserisci un indirizzo email valido",
       "MESSAGE": "Inserisci un messaggio"
     }
+  },
+  "TECHNOLOGY": {
+    "MESSAGE1": "La stampa 3D Fused Deposition Modeling (FDM) è una tecnologia che utilizza un filamento termoplastico estruso da un ugello per creare uno strato alla volta, stratificando il materiale fino a formare l'oggetto tridimensionale desiderato. Il processo inizia con la modellazione digitale dell'oggetto, che viene poi suddiviso in strati. Il filamento viene riscaldato fino a diventare liquido e depositato strato dopo strato sulla piattaforma, solidificando rapidamente per formare l'oggetto finale.",
+    "MESSAGE2": "La stampa 3D a resina, nota anche come stereolitografia (SLA) o stampa 3D a polimerizzazione liquida (DLP), impiega la luce ultravioletta per solidificare uno strato sottile di resina fotosensibile. Durante la stampa, uno speciale laser (nel caso dell'SLA) o una sorgente di luce UV (nel caso del DLP) indurisce la resina liquida strato dopo strato, creando un oggetto solido. Questa tecnologia è apprezzata per la sua capacità di produrre dettagli molto fini e superfici lisce, rendendola adatta per la prototipazione di precisione e la produzione di oggetti con intricati dettagli."
   }
+
 }

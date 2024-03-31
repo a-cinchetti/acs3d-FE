@@ -18,5 +18,10 @@ export class ContactComponent {
   constructor(private formBuilder: FormBuilder,) {
   }
 
+  sendRequest() {
+    if (this.contactForm.valid) {
+      this.contactForm.reset();
+    }
+  }
 
 }

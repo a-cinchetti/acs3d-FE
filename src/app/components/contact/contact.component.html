@@ -38,6 +38,7 @@
         <div class=" row">
           <mat-checkbox class="form-element__checkbox" formControlName="privacy" >{{ 'CONTACT.PRIVACY' | translate }}</mat-checkbox>
           <app-acs-button [isDisabled]="contactForm.invalid" type="secondary"
+                          [onClick]="sendRequest.bind(this)"
                           label="{{'CONTACT.SEND' | translate}}"></app-acs-button>
         </div>
       </div>
