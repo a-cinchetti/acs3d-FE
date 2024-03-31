@@ -9,14 +9,40 @@
 
   .contact-info {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 24px;
+      font-weight: bold;
+    }
+
+    &__description {
+      font-size: 20px;
+      margin-bottom: 24px;
+      width: 80%;
+      line-height: 24px;
+    }
+
+    &__icon-svg {
+      ::ng-deep svg {
+        width: 120px;
+        height: 120px;
+      }
+    }
   }
 
   form {
     width: 50%;
+    display: flex;
 
     .form-group {
       display: flex;
       flex-direction: column;
+      align-self: center;
+
       .form-element {
         display: flex;
         flex-direction: column;
@@ -28,16 +54,23 @@
         &--lg {
           flex-grow: 2;
         }
+
+        &__checkbox {
+          width: 100%;
+        }
       }
+
       .form-label {
         font-size: 16px;
         margin-bottom: 12px;
       }
+
       textarea {
         resize: none;
         height: 120px;
       }
     }
+
     .row {
       display: flex;
       flex-direction: row;

@@ -7,6 +7,8 @@ import {ContactComponent} from './contact/contact.component';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {ReactiveFormsModule} from "@angular/forms";
+import {MatCheckbox, MatCheckboxModule} from "@angular/material/checkbox";
+import {InlineSVGModule} from "ng-inline-svg-2";
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import {ReactiveFormsModule} from "@angular/forms";
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCheckboxModule,
+    InlineSVGModule
   ],
   exports: [AcsButtonComponent, ContactComponent]
 })

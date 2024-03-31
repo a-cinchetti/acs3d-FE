@@ -2,6 +2,8 @@
   <div class="contact-info">
     <span class="contact-info__title">{{ 'CONTACT.TITLE' | translate }}</span>
     <span class="contact-info__description">{{ 'CONTACT.MESSAGE' | translate }}</span>
+    <div class="contact-info__icon-svg" aria-label="My icon" [inlineSVG]="'/assets/icon/ACS-notext.svg'"></div>
+
   </div>
   <form [formGroup]="contactForm">
     <div class="form-group">
@@ -23,7 +25,7 @@
               {{ 'CONTACT.ERROR.EMAIL' | translate }}
             </mat-error>
           </mat-form-field>
-      </div>
+        </div>
       </div>
       <div class="form-element form-element--lg">
         <span class="form-label">{{ 'CONTACT.INPUT.MESSAGE' | translate }}</span>
@@ -33,8 +35,12 @@
             {{ 'CONTACT.ERROR.MESSAGE' | translate }}
           </mat-error>
         </mat-form-field>
+        <div class=" row">
+          <mat-checkbox class="form-element__checkbox" formControlName="privacy" >{{ 'CONTACT.PRIVACY' | translate }}</mat-checkbox>
+          <app-acs-button [isDisabled]="contactForm.invalid" type="secondary"
+                          label="{{'CONTACT.SEND' | translate}}"></app-acs-button>
+        </div>
       </div>
     </div>
-    <app-acs-button [isDisabled]="contactForm.invalid" type="secondary"></app-acs-button>
   </form>
 </div>

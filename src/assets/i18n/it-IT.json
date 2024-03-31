@@ -33,6 +33,10 @@
       "EMAIL": "Email",
       "MESSAGE": "Messaggio"
     },
+    "TITLE": "Contattaci",
+    "MESSAGE": "Compila il nostro form di contatto per richieste di informazioni o di preventivo e ti risponderemo al più presto.",
+    "SEND": "Invia",
+    "PRIVACY": "Acconsento al trattamento dei miei dati personali secondo quanto previsto dall’art. 13 del D. Lgs. 196/2003 e dell’articolo 13 del Regolamento UE n. 2016/679 (obbligatorio)",
     "ERROR": {
       "NAME": "Inserisci il tuo nome",
       "EMAIL": "Inserisci un indirizzo email valido",

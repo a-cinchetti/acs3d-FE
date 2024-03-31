@@ -74,20 +74,20 @@ button {
   }
 
   &--secondary{
-    background-color: transparent;
+    background-color: $nero;
     color: $giallo1;
 
     &:hover{
-      background-color: transparent;
+      background-color: $nero;
       border-color: $giallo2;
       color: $giallo2;
     }
 
     &:disabled,
     &:disabled:hover{
-      background-color: transparent;
+      background-color: $grigio3;
       border-color: $grigio3;
-      color: $grigio3;
+      color: $giallo1;
     }
   }
 
