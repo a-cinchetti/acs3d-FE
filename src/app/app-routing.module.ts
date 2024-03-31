@@ -1,14 +1,7 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import {HomepageComponent} from "./pages/homepage/homepage.component";
+import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
+import {routes} from "./routes";
 
-const routes: Routes = [
-  {
-    path: '',
-    component: HomepageComponent,
-    loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
-  }
-];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

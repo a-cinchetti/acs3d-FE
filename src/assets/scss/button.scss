@@ -1,0 +1,256 @@
+app-titano-button{
+  display: inline-flex;
+
+ &[aria-expanded="true"] .button--outline {
+    background-color: #EEF3FC;
+  }
+}
+app-titano-button + app-titano-button{
+  margin-left: 12px;
+}
+
+button {
+  &.hide-button {
+    display: none;
+  }
+}
+
+.button{
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  background-color: $giallo1;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 6px;
+  font-size: 20px;
+  white-space: nowrap;
+  color: $nero;
+  font-weight: 700;
+  border: 2px solid  $giallo1;
+  gap: 8px;
+  transition: all ease-in .3s;
+
+  &.light {
+    font-weight: inherit !important;
+    margin: 0;
+  }
+
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 8px;
+
+    app-titano-button + app-titano-button{
+      margin: 0;
+    }
+  }
+
+  .mat-icon{
+    height: auto;
+    width:auto;
+    font-size: 16px;
+  }
+
+  &--sm{
+    height: 36px;
+  }
+
+  &--lg{
+    height: 60px;
+  }
+
+  &:hover{
+    background-color: $giallo2;
+    border-color: $giallo2;
+    cursor: pointer;
+  }
+
+  &:disabled,
+  &:disabled:hover{
+    background-color: $grigio3;
+    border-color: $grigio3;
+  }
+
+  &--secondary{
+    background-color: transparent;
+    color: $giallo1;
+
+    &:hover{
+      background-color: transparent;
+      border-color: $giallo2;
+      color: $giallo2;
+    }
+
+    &:disabled,
+    &:disabled:hover{
+      background-color: transparent;
+      border-color: $grigio3;
+      color: $grigio3;
+    }
+  }
+
+  &--tertiary{
+    background-color: $btntertiary;
+    border: 0;
+    color: $giallo1;
+
+    &:hover{
+      background-color: $btntertiary;
+      border: 0;
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .12);
+    }
+
+    &:disabled,
+    &:disabled:hover{
+      background-color: transparentize($grigio3, .80);
+      border-color: transparent;
+      color: $grigio3;
+      box-shadow: none;
+    }
+  }
+
+  &--selected {
+    background-color: $st1;
+    color: $giallo2;
+    border: 2px solid  $giallo2;
+    &:hover {
+      background-color: $st1;
+    }
+  }
+
+  &--link,
+  &--link-grey{
+    background-color: transparent;
+    border: none;
+    color: $giallo1;
+    height: unset;
+    border-radius: 0;
+    padding: 0;
+    margin: 0 4px;
+
+    &:hover{
+      background-color: transparent;
+      color: $giallo2;
+      box-shadow: 0 1px 0 $giallo2;
+    }
+
+    &:disabled,
+    &:disabled:hover{
+      background-color: transparent;
+      color: $grigio3;
+      box-shadow: none;
+    }
+  }
+
+  &--icon{
+    &:hover{
+      box-shadow: none;
+    }
+  }
+
+  &--link-grey{
+    color: $grigio1;
+    height: 36px;
+    min-width: 36px;
+    padding: 0 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin: 0;
+
+    &:hover{
+      color: $nero;
+      box-shadow: none;
+      background-color: $grigio4;
+    }
+
+  }
+
+  &--round{
+    padding: 0;
+    width: 42px;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  &--square{
+     padding: 0;
+     width: 42px;
+     justify-content: center;
+   }
+
+  &--outline {
+    background-color: $bianco;
+    color: $grigio1;
+    border: 1px solid $g1;
+
+    &:hover {
+      background-color: $grigio4;
+      border: 1px solid $g1;
+    }
+
+    &:active,
+    &:focus {
+      background-color: #EEF3FC;
+      border: 1px solid $g1;
+    }
+
+    &:disabled,
+    &:disabled:hover{
+      background-color: $bianco;
+      border: 1px solid $g1;
+      opacity: .54;
+    }
+  }
+
+  &--green {
+    background-color: green;
+    border: 0;
+  }
+
+  &--red {
+    background-color: darkred;
+    border: 0;
+  }
+
+}
+
+
+.mat-button-toggle-group-appearance-standard {
+  .mat-button-toggle-checked.mat-button-toggle-appearance-standard{
+    color: $giallo1;
+  }
+}
+
+.mat-button-toggle-standalone.mat-button-toggle-appearance-standard {
+  border-color: $g1;
+  border-radius: 4px;
+  width: 42px;
+  color: $grigio1;
+
+  .mat-icon{
+    font-size: 14px;
+  }
+
+  &.btn__popup{
+    &.mat-button-toggle-checked {
+      background: $pt4;
+      color: $grigio1;
+      border-color: $g1;
+    }
+  }
+  .mat-button-toggle-label-content {
+    line-height: 40px;
+    padding: 0;
+  }
+
+  &.mat-button-toggle-checked {
+    background: $giallo1;
+    color: $nero;
+    border-color:  $giallo1;
+  }
+}

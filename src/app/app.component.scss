@@ -1,0 +1,10 @@
+
+
+.acs3d-app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &__body-content {
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,39 @@
+@import 'src/assets/scss/palette.scss';
+
+.header {
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  align-items: center;
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 20px;
+    flex: 1;
+    align-items: center;
+    gap: 40px;
+    margin-right: 80px;
+  }
+  &__logo {
+    &__icon-svg {
+      ::ng-deep svg {
+        width: 100px;
+        height: 100px;
+
+        path {
+          fill: $giallo1;
+        }
+      }
+    }
+    span {
+      font-size: 16px;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  color: $giallo1;
+}
+

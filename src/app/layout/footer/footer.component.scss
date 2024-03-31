@@ -1,0 +1,12 @@
+@import 'src/assets/scss/palette.scss';
+
+.footer {
+  padding: 32px;
+  font-size: 18px;
+  &__legal-note {
+    color: $giallo1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

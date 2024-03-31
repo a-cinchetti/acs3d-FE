@@ -1,0 +1,42 @@
+{
+  "HEADER": {
+    "MOTTO": "Uno strato alla volta",
+    "3DPRINT": "Stampa 3D",
+    "CONTACT": "Contatti",
+    "TECHNOLOGY": "Tecnologie"
+  },
+  "FOOTER": {
+    "LEGAL_NOTE": "Copyright © 2024 Sir.co snc - Tutti i diritti sono riservati C.F./P.IVA 03919410161"
+  },
+  "PRINT": {
+    "MOTTO": "Sperimenta il futuro della stampa 3D",
+    "MESSAGE": "Scopri le possibilità illimitate della stampa 3D con ACS 3D. Rivoluziona i tuoi progetti e dagli vita.",
+    "EXPLORE": "Esplora ora",
+    "HISTORY": "Con sede nella provincia di Bergamo, a pochi passi sia da Brescia che da Milano, ACS 3D è un service all'avanguardia che si occupa di trasformare idee e progetti in realtà tangibile, attraverso la tecnologia di stampa 3D.  Ci impegniamo a fornire soluzioni di manifattura additiva di alta qualità, per soddisfare le esigenze dei nostri clienti. Che tu abbia bisogno di prototipi, modelli architettonici o progetti personalizzati, il nostro team dedicato è impegnato a fornire soluzioni efficienti e affidabili.",
+    "FUTURE": "Scopri il futuro della stampa 3D con ACS 3D e sblocca infinite possibilità per la tua azienda.",
+    "HISTORY_MOTTO": "ACS 3D - uno strato alla volta",
+    "FABIOC": "Stampa 3D di alta qualità e servizio impeccabile. Consigliatissimi!",
+    "MICHELS": "Precisi e puntuali.",
+    "ANGELOC": "Rapida prototipazione e realizzazione di un nostro progetto.",
+    "CONTENT": {
+      "TITLE1": "Prototipi personalizzati",
+      "DESCRIPTION1": "Siamo consapevoli che ogni progetto sia unico. Per questo offriamo soluzioni che si adattino alle esigenze del cliente.",
+      "TITLE2": "Collaborazioni creative",
+      "DESCRIPTION2": "Collaboriamo strettamente con i nostri clienti, ascoltando le loro idee e offrendo loro tutte le nostre competenze.",
+      "TITLE3": "Consegne puntuali",
+      "DESCRIPTION3": "Comprendiamo l’importanza dei tempi di consegna, garantendo produzioni  e spedizioni precise, nei tempi concordati."
+    }
+  },
+  "CONTACT": {
+    "INPUT": {
+      "NAME": "Nome",
+      "EMAIL": "Email",
+      "MESSAGE": "Messaggio"
+    },
+    "ERROR": {
+      "NAME": "Inserisci il tuo nome",
+      "EMAIL": "Inserisci un indirizzo email valido",
+      "MESSAGE": "Inserisci un messaggio"
+    }
+  }
+}

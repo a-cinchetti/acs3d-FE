@@ -1,0 +1,40 @@
+<div class="contact-component">
+  <div class="contact-info">
+    <span class="contact-info__title">{{ 'CONTACT.TITLE' | translate }}</span>
+    <span class="contact-info__description">{{ 'CONTACT.MESSAGE' | translate }}</span>
+  </div>
+  <form [formGroup]="contactForm">
+    <div class="form-group">
+      <div class="row">
+        <div class="form-element form-element--sm">
+          <span class="form-label">{{ 'CONTACT.INPUT.NAME' | translate }}</span>
+          <mat-form-field appearance="outline" class="input__wrapper">
+            <input matInput placeholder="" value="" formControlName="name">
+            <mat-error>
+              {{ 'CONTACT.ERROR.NAME' | translate }}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="form-element form-element--sm">
+          <span class="form-label">{{ 'CONTACT.INPUT.EMAIL' | translate }}</span>
+          <mat-form-field appearance="outline" class="input__wrapper">
+            <input matInput placeholder="" value="" formControlName="email">
+            <mat-error>
+              {{ 'CONTACT.ERROR.EMAIL' | translate }}
+            </mat-error>
+          </mat-form-field>
+      </div>
+      </div>
+      <div class="form-element form-element--lg">
+        <span class="form-label">{{ 'CONTACT.INPUT.MESSAGE' | translate }}</span>
+        <mat-form-field appearance="outline" class="input__wrapper">
+          <textarea matInput placeholder="" value="" formControlName="message" [maxlength]="1024"></textarea>
+          <mat-error>
+            {{ 'CONTACT.ERROR.MESSAGE' | translate }}
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <app-acs-button [isDisabled]="contactForm.invalid" type="secondary"></app-acs-button>
+  </form>
+</div>

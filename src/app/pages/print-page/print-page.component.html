@@ -1,0 +1,53 @@
+<div class="info">
+  <img src="assets/images/3dprint.png" alt="3dprint" class="info__img">
+  <div class="info__description">
+    <div class="description-content">
+      <span class="description-content--title"><strong>{{ 'PRINT.MOTTO' | translate }}</strong></span>
+      <span class="description-content--message">{{ 'PRINT.MESSAGE' | translate }}</span>
+      <app-acs-button type="primary" label="{{ 'PRINT.EXPLORE' | translate }}" size="lg"></app-acs-button>
+    </div>
+  </div>
+</div>
+<div class="text-page">
+  <div class="history">
+    <span>{{ 'PRINT.HISTORY' | translate }}</span>
+    <span>{{ 'PRINT.FUTURE' | translate }}</span>
+    <span class="history--align-center">{{ 'PRINT.HISTORY_MOTTO' | translate }}</span>
+  </div>
+  <div class="separator">
+    <div class="line"></div>
+    <span>DICONO DI NOI</span>
+    <div class="line"></div>
+  </div>
+  <div class="review-list">
+    @for (item of reviewList; track item) {
+      <div class="review">
+        <div class="reviewer">
+          <span>{{ item.reviewer }} </span>
+          @if (item.company) {
+            <span>- <i>{{ item.company }}</i></span>
+          }
+        </div>
+        <span><strong>"{{ 'PRINT.' + item.review | translate }}"</strong></span>
+      </div>
+    }
+  </div>
+  <div class="carousel">
+    <div class="content">
+      <img src="assets/images/info1.png" alt="infoimg" class="carousel__img">
+      <span class="content__title">{{'PRINT.CONTENT.TITLE1' | translate}}</span>
+      <span class="content__description">{{'PRINT.CONTENT.DESCRIPTION1' | translate}}</span>
+    </div>
+    <div class="content">
+      <img src="assets/images/info2.png" alt="infoimg" class="carousel__img">
+      <span class="content__title">{{'PRINT.CONTENT.TITLE2' | translate}}</span>
+      <span class="content__description">{{'PRINT.CONTENT.DESCRIPTION2' | translate}}</span>
+    </div>
+    <div class="content">
+      <img src="assets/images/info3.png" alt="infoimg" class="carousel__img">
+      <span class="content__title">{{'PRINT.CONTENT.TITLE3' | translate}}</span>
+      <span class="content__description">{{'PRINT.CONTENT.DESCRIPTION3' | translate}}</span>
+    </div>
+  </div>
+</div>
+<app-contact></app-contact>

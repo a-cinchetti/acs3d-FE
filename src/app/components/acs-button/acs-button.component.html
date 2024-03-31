@@ -1,0 +1,30 @@
+<button
+  [type]="getIsSubmit()"
+  (click)="onClick()"
+  data-testid="titano-button"
+  class="button"
+  [ngClass]="[getButtonType(), getButtonSize(), isButtonRound(), isButtonSquare(), isSelected(), getButtonClass(), getIconType()]"
+  [disabled]="isDisabled">
+
+  @if(!customIcon){
+    <ng-container>
+      @if(iconLeft){
+        <mat-icon fontSet="{{iconFontSet}}" fontIcon="fa-{{iconLeft}}"></mat-icon>
+      }
+      {{label | translate}}
+      @if(iconRight){
+        <mat-icon  fontSet="{{iconFontSet}}" fontIcon="fa-{{iconRight}}"></mat-icon>
+      }
+    </ng-container>
+  }@else{
+    <ng-container>
+      @if (iconLeft){
+        <mat-icon  fontSet="icomoon" fontIcon="{{iconLeft}}"></mat-icon>
+      }
+      {{label | translate}}
+      @if(iconRight){
+        <mat-icon  fontSet="icomoon" fontIcon="{{iconRight}}"></mat-icon>
+      }
+    </ng-container>
+  }
+</button>
