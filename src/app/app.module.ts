@@ -13,6 +13,7 @@ import {MatFormField, MatFormFieldModule} from "@angular/material/form-field";
 import {MatSelect, MatSelectModule} from "@angular/material/select";
 import {MatIconModule} from "@angular/material/icon";
 import {FormsModule} from "@angular/forms";
+import {MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {FormsModule} from "@angular/forms";
     MatFormFieldModule,
     MatSelectModule,
     MatIconModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule
   ],
   providers: [
     provideAnimationsAsync(),

@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {FormBuilder, Validators} from "@angular/forms";
+import {ContactService} from "./contact.service";
 
 @Component({
   selector: 'app-contact',
@@ -15,11 +16,17 @@ export class ContactComponent {
     privacy: this.formBuilder.control(null, [Validators.requiredTrue])
   });
 
-  constructor(private formBuilder: FormBuilder,) {
+  constructor(private formBuilder: FormBuilder, private contactService: ContactService) {
   }
 
   sendRequest() {
     if (this.contactForm.valid) {
+      const response = {
+        message: this.contactForm.value.message,
+        email: this.contactForm.value.email,
+        name: this.contactForm.value.name
+      };
+      this.contactService.sendEmailRequest(response);
       this.contactForm.reset();
     }
   }
