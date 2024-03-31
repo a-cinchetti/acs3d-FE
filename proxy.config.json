@@ -1,0 +1,7 @@
+{
+  "/api/sendemail/*": {
+    "target": "https://acs3d-emailsender.acworker.workers.dev/",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
