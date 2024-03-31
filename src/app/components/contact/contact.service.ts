@@ -11,7 +11,7 @@ export class ContactService {
   }
 
   sendEmailRequest(data: any) {
-    this.http.post('https://acs3d-emailsender.acworker.workers.dev/api/sendemail', data, {
+    this.http.post('api/sendemail', data, {
       headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*'
