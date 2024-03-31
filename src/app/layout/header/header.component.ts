@@ -25,4 +25,8 @@ export class HeaderComponent  {
   changeLanguage(language: MatSelectChange) {
     this.translateService.use(language.value);
   }
+
+  changeLanguageMobile(language: string) {
+    this.translateService.use(language);
+  }
 }

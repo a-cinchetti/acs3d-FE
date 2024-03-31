@@ -3,7 +3,7 @@
     <div class="header__logo__icon-svg" aria-label="My icon" [inlineSVG]="'/assets/icon/ACS.svg'"></div>
     <span> {{ 'HEADER.MOTTO' | translate }}</span>
   </div>
-  <div class="language-selector">
+  <div class="language-selector language-selector--desktop">
     <mat-icon fontSet="fa" fontIcon="fa-globe" class="language-selector__icon"></mat-icon>
     <mat-form-field appearance="outline" class="language-selector__select">
       <mat-select [value]="currentLang" (selectionChange)="changeLanguage($event)">
@@ -12,9 +12,28 @@
       </mat-select>
     </mat-form-field>
   </div>
-  <div class="header__menu">
+  <div class="language-selector language-selector--mobile">
+    <button mat-button [matMenuTriggerFor]="MenuLang" class="menu-button-language" >
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontSet="fa" fontIcon="fa-globe"></mat-icon>
+    </button>
+    <mat-menu #MenuLang="matMenu">
+      <button mat-menu-item (click)="changeLanguageMobile('it-IT')" class="text-menu"><strong>{{ getLanguage('it-IT') }}</strong></button>
+      <button mat-menu-item (click)="changeLanguageMobile('en-EN')" class="text-menu"><strong>{{ getLanguage('en-EN') }}</strong></button>
+    </mat-menu>
+  </div>
+  <div class="header__menu header__menu--desktop">
     <span class="header__menu__item" (click)="navigateToPage('')">{{ 'HEADER.3DPRINT' | translate | uppercase }}</span>
     <span class="header__menu__item" (click)="navigateToPage('technology')">{{ 'HEADER.TECHNOLOGY' | translate | uppercase }}</span>
     <span class="header__menu__item" (click)="navigateToPage('contact')">{{ 'HEADER.CONTACT' | translate | uppercase }}</span>
+  </div>
+  <div class="header__menu header__menu--mobile">
+    <button mat-button [matMenuTriggerFor]="Menu" class="menu-button" >
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
+    </button>
+    <mat-menu #Menu="matMenu">
+      <button mat-menu-item (click)="navigateToPage('')" class="text-menu"><strong>{{ 'HEADER.3DPRINT' | translate | uppercase }}</strong></button>
+      <button mat-menu-item (click)="navigateToPage('technology')" class="text-menu"><strong>{{ 'HEADER.TECHNOLOGY' | translate | uppercase }}</strong></button>
+      <button mat-menu-item (click)="navigateToPage('contact')" class="text-menu"><strong>{{ 'HEADER.CONTACT' | translate | uppercase }}</strong></button>
+    </mat-menu>
   </div>
 </div>

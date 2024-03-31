@@ -9,11 +9,13 @@ import {FooterComponent} from './layout/footer/footer.component';
 import {InlineSVGModule} from "ng-inline-svg-2";
 import {HttpClientModule} from "@angular/common/http";
 import {StringTranslateModule} from "./string-translate-module/string-translate.module";
-import {MatFormField, MatFormFieldModule} from "@angular/material/form-field";
-import {MatSelect, MatSelectModule} from "@angular/material/select";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatSelectModule} from "@angular/material/select";
 import {MatIconModule} from "@angular/material/icon";
 import {FormsModule} from "@angular/forms";
 import {MatDialogModule} from "@angular/material/dialog";
+import {MatButtonModule} from "@angular/material/button";
+import {MatMenu, MatMenuModule, MatMenuTrigger} from "@angular/material/menu";
 
 @NgModule({
   declarations: [
@@ -31,7 +33,10 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatSelectModule,
     MatIconModule,
     FormsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatButtonModule,
+    MatMenuTrigger,
+    MatMenuModule
   ],
   providers: [
     provideAnimationsAsync(),

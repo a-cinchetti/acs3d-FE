@@ -2,16 +2,40 @@
   display: flex;
   flex-direction: column;
   padding: 50px;
+  @media (max-width: 700px) {
+    padding: 50px 30px;
+  }
+  @media (max-width: 400px) {
+    padding: 50px 20px;
+  }
   gap: 50px;
 
   &__content {
     display: flex;
     gap: 50px;
     align-items: center;
+    &--mobile {
+      display: none;
+    }
+    &--desktop {
+      display: flex;
+    }
+    @media (max-width: 970px ) {
+      flex-direction: column;
+      &--mobile {
+        display: flex;
+      }
+      &--desktop {
+        display: none;
+      }
+    }
 
     &--img {
       width: 900px;
       height: 500px;
+      @media (max-width: 970px) {
+        width: 100%;
+      }
       border-radius: 10px;
       object-fit: cover;
     }
@@ -19,6 +43,14 @@
     &--text {
       font-size: 24px;
       line-height: 44px;
+      @media (max-width: 1100px) {
+        font-size: 22px;
+        line-height: 30px;
+      }
+      @media (max-width: 400px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
     }
   }
 }
