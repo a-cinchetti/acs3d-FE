@@ -45,7 +45,6 @@ export class ContactComponent {
   }
 
   getIsHigher(number: number) {
-    console.log(this.screenSize, number);
     return this.screenSize >= number;
   }
 }

@@ -9,7 +9,10 @@
   &__legal-note {
     color: $giallo1;
     display: flex;
+    gap: 8px;
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
   }
 }
